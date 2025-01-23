@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <RootNamespace>weather_app</RootNamespace>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\cloud.png" />
+    <None Remove="Images\rain.png" />
+    <None Remove="Images\sunrise.png" />
+    <None Remove="Images\sunset.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="GMap.NET" Version="1.0.1" />
+    <PackageReference Include="GMap.NET.Core" Version="2.1.7" />
+    <PackageReference Include="GMap.NET.WinPresentation" Version="2.1.7" />
+    <PackageReference Include="LiveCharts" Version="0.9.7" />
+    <PackageReference Include="LiveCharts.wpf" Version="0.9.7" />
+    <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.2957.106" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\cloud.png" />
+    <Resource Include="Images\rain.png" />
+    <Resource Include="Images\sunrise.png" />
+    <Resource Include="Images\sunset.png" />
+  </ItemGroup>
+
+</Project>
